@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Exam Preparation Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a cleaner look and feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f3ff; /* Very light purple background */
+            color: #334155; /* Darker text for readability */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem; /* Increased padding */
+        }
+        .section-heading {
+            border-bottom: 2px solid #ddd6fe; /* Subtle purple border */
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem; /* More space */
+            color: #7c3aed; /* Darker purple for headings */
+            font-weight: 700; /* Bold headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Enhanced shadow */
+            padding: 2rem; /* Increased padding inside cards */
+            margin-bottom: 2rem; /* More space between cards */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+        }
+        .youtube-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* Rounded corners for embeds */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .gradient-text-teaching {
+            background: linear-gradient(to right, #8b5cf6, #a78bfa); /* Purple to lighter purple gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Button styling for Teaching theme */
+        .btn-teaching-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #8b5cf6; /* Purple */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .btn-teaching-primary:hover {
+            background-color: #7c3aed; /* Darker purple on hover */
+            transform: translateY(-2px); /* Slight lift */
+        }
+        .btn-teaching-primary svg {
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-purple-50 text-gray-800">
+    <div class="container py-12">
+        <header class="text-center mb-16 bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-2xl shadow-lg">
+            <h1 class="text-6xl font-extrabold mb-4 gradient-text-teaching">
+                Inspire Futures: Teaching Exams
+            </h1>
+            <p class="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Your comprehensive guide to preparing for CTET, TET, KVS, NVS, DSSSB, UGC NET, and other teaching recruitment exams.
+            </p>
+            <a href="#teaching-syllabus" class="btn-teaching-primary mt-8">
+                Explore Exam Syllabus
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.43 14.83a2 2 0 0 0-1.41-1.41L10.5 6.5 3.17 13.83a2 2 0 0 0-1.41 1.41V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.17Z"/><path d="M16 16v.01"/><path d="M12 12v.01"/><path d="M8 8v.01"/><path d="M12 12c-1.33-1.33-2-4-7-7"/></svg>
+            </a>
+        </header>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">👩‍🏫</span> About Teaching Exams
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Teaching is a noble profession with numerous opportunities in government schools and institutions across India. Various central and state-level examinations are conducted to recruit qualified teachers for different levels (Primary, Secondary, Higher Education).</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">🎯</span> Popular Exams:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">CTET (Central Teacher Eligibility Test):</strong> Conducted by CBSE for eligibility to teach in Central Government schools (KVS, NVS, etc.).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">State TETs (e.g., UPTET, HTET, REET):</strong> State-level eligibility tests for teaching in state government schools.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">KVS/NVS Recruitment:</strong> For various teaching and non-teaching posts in Kendriya Vidyalaya Sangathan and Navodaya Vidyalaya Samiti.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">DSSSB (Delhi Subordinate Services Selection Board):</strong> For teaching posts in Delhi government schools.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">UGC NET (National Eligibility Test):</strong> For Assistant Professorship and Junior Research Fellowship in Indian universities and colleges.
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✅</span> Eligibility Highlights:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Education:</strong> Varies from D.Ed/B.Ed, Bachelor's degree, to Master's degree depending on the post and level (e.g., PRT, TGT, PGT).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Age:</strong> Typically between 18-35 years, with specific relaxations for reserved categories.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" id="teaching-syllabus">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📝</span> Teaching Exam Syllabus
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">The syllabus for teaching exams generally includes Child Development & Pedagogy, Language (I & II), Mathematics, Environmental Studies, General Knowledge, Reasoning, and Subject-Specific knowledge. The structure and weightage vary by exam.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✨</span> Common Subjects:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Child Development & Pedagogy:</strong> Principles of child development, learning theories, inclusive education, understanding diverse learners, teaching-learning process.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Language I & II:</strong> Comprehension, grammar, and pedagogy of language development (usually Hindi/English or regional languages).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Mathematics:</strong> Number system, arithmetic, geometry, data handling, and pedagogical issues in teaching mathematics.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Environmental Studies (EVS):</strong> Family and friends, food, shelter, water, travel, things we make and do, and pedagogical issues related to EVS.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">General Knowledge & Current Affairs:</strong> National and international events, history, geography, polity, economy, science.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Reasoning Ability:</strong> Verbal and non-verbal reasoning, analytical reasoning, problem-solving.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Subject-Specific Knowledge:</strong> For TGT/PGT level exams, in-depth knowledge of the chosen teaching subject.
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://www.careerpower.in/ctet-syllabus.html" class="btn-teaching-primary">
+                    View Exam-Specific Syllabus
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📺</span> Best YouTube Playlists for Teaching Study
+            </h2>
+            <p class="text-lg mb-8 leading-relaxed">Prepare effectively for teaching exams with these highly recommended YouTube channels and their specialized playlists. They offer excellent content for Child Development & Pedagogy, subject-specific knowledge, and general sections.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-indigo-50 p-6 rounded-xl border border-indigo-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center">
+                        <img src="lets.jpg" alt="Let's Learn Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-indigo-400">
+                        Let's Learn (Himanshi Singh)
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">Extremely popular for CTET and other TET exams, especially for Child Development & Pedagogy. Offers clear explanations and comprehensive coverage.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PLydk8qNdwOVTWZqup69C_AXKmK5LMuXr_&si=1hVDARWPNXJT-6cN" target="_blank" class="btn-teaching-primary self-start bg-indigo-600 hover:bg-indigo-700">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="bg-violet-50 p-6 rounded-xl border border-violet-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-violet-800 mb-3 flex items-center">
+                        <img src="adhy.jpg" alt="Adhyayan Mantra Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-violet-400">
+                        Adhyayan Mantra
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">A comprehensive platform for various teaching exams like CTET, DSSSB, KVS, NVS. Offers subject-wise lectures, practice sets, and current affairs.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PLgo93e5X006MfzQe3dtcXuvAhfstz685-&si=UoeI0krGExzvSQRG" target="_blank" class="btn-teaching-primary self-start bg-violet-600 hover:bg-violet-700">
+                        Visit FullPlaylist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+
+                <div class="bg-rose-50 p-6 rounded-xl border border-rose-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-rose-800 mb-3 flex items-center">
+                        <img src="unacademy.jpg" alt="Unacademy UGC NET Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-rose-400">
+                        Unacademy Live - NTA UGC NET
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">Specifically for UGC NET aspirants, covering Paper 1 (General Paper) and various Paper 2 subjects. Features expert educators and in-depth topic discussions.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PL6tURt-D5aYtMUuVo9oU8S07YwliXfPaF&si=913SZR9K75kBjNjS" target="_blank" class="btn-teaching-primary self-start bg-rose-600 hover:bg-rose-700">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📄</span> Previous Year Papers & Mock Tests
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Regular practice with previous year papers and mock tests is essential for teaching exams. They help you understand the exam pattern, question types, and improve your time management and accuracy.</p>
+                <div class="flex flex-wrap gap-4 mt-4">
+                    <a href="https://ctet.nic.in/archive/" class="btn-teaching-primary">
+                        Download CTET PYQs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="https://www.adda247.com/teaching-jobs-exam/nvs-previous-year-paper/" class="btn-teaching-primary bg-violet-600 hover:bg-violet-700">
+                        Download KVS/NVS PYQs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="#" class="btn-teaching-primary bg-fuchsia-600 hover:bg-fuchsia-700">
+                        Attempt Mock Tests
+                        <svg xmlns="https://testseries.edugorilla.com/exams/teaching/526" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📚</span> Recommended Books
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Equip yourself with these essential books, widely recommended for teaching exam preparation. A strong foundation in Child Development & Pedagogy and subject-specific knowledge is key.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">👶</span>
+                        <p class="text-lg font-medium">Child Development & Pedagogy by Disha Experts</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🗣️</span>
+                        <p class="text-lg font-medium">English Language & Pedagogy by Arihant</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">➕</span>
+                        <p class="text-lg font-medium">Mathematics & Pedagogy for CTET/TET</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🌳</span>
+                        <p class="text-lg font-medium">Environmental Studies & Pedagogy for CTET/TET</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🌐</span>
+                        <p class="text-lg font-medium">General Knowledge by Lucent's</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🧠</span>
+                        <p class="text-lg font-medium">Reasoning Ability for Competitive Exams</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <footer class="text-center text-gray-600 mt-12 text-sm">
+            <p>© 2025 Government Jobs Portal. All rights reserved.</p>
+            <p class="mt-2">Designed to help you shape young minds.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Exam Preparation Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a cleaner look and feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff7ed; /* Very light orange/peach background */
+            color: #4a5568; /* Darker text for readability */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem; /* Increased padding */
+        }
+        .section-heading {
+            border-bottom: 2px solid #fed7aa; /* Subtle orange border */
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem; /* More space */
+            color: #ea580c; /* Darker orange for headings */
+            font-weight: 700; /* Bold headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Enhanced shadow */
+            padding: 2rem; /* Increased padding inside cards */
+            margin-bottom: 2rem; /* More space between cards */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+        }
+        .youtube-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* Rounded corners for embeds */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .gradient-text-ssc {
+            background: linear-gradient(to right, #f97316, #fb923c); /* Orange to lighter orange gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Button styling for SSC theme */
+        .btn-ssc-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f97316; /* Orange */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .btn-ssc-primary:hover {
+            background-color: #ea580c; /* Darker orange on hover */
+            transform: translateY(-2px); /* Slight lift */
+        }
+        .btn-ssc-primary svg {
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-orange-50 text-gray-800">
+    <div class="container py-12">
+        <header class="text-center mb-16 bg-gradient-to-r from-orange-50 to-red-50 p-8 rounded-2xl shadow-lg">
+            <h1 class="text-6xl font-extrabold mb-4 gradient-text-ssc">
+                Conquer Your SSC Exams
+            </h1>
+            <p class="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Your comprehensive guide to preparing for SSC CGL, CHSL, MTS, and other Staff Selection Commission examinations.
+            </p>
+            <a href="https://ssc.nic.in/Portal/Syllabus" class="btn-ssc-primary mt-8">
+                Explore Exam Syllabus
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </header>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">💼</span> About SSC Exams
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">The Staff Selection Commission (SSC) conducts various examinations annually to recruit candidates for numerous Group 'B' and Group 'C' posts in various Ministries/Departments/Organizations of the Government of India. These exams offer diverse career paths for graduates and 12th pass students.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">🎯</span> Popular Exams:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">SSC CGL (Combined Graduate Level):</strong> For various Group 'B' and 'C' posts requiring a Bachelor's degree.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">SSC CHSL (Combined Higher Secondary Level):</strong> For Data Entry Operator (DEO), Lower Division Clerk (LDC), Postal Assistant/Sorting Assistant posts (12th pass).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">SSC MTS (Multi-Tasking Staff):</strong> For various non-technical Group 'C' posts (10th pass).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">SSC GD Constable:</strong> For recruitment of Constables (GD) in various armed forces.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">SSC CPO (Central Police Organization):</strong> For Sub-Inspector (SI) in Delhi Police, CAPFs, etc.
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✅</span> Eligibility Highlights:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Education:</strong> Varies by exam (10th pass, 12th pass, Bachelor's degree).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Age:</strong> Typically between 18-27 or 20-30 years, depending on the exam and post (with relaxations for reserved categories).
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" id="ssc-syllabus">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📝</span> SSC Exam Syllabus
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">The syllabus for most SSC exams generally includes General Intelligence & Reasoning, General Awareness, Quantitative Aptitude, and English Comprehension. The difficulty and depth vary based on the exam level.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✨</span> Common Subjects:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">General Intelligence & Reasoning:</strong> Analogies, Similarities and Differences, Spatial Visualization, Problem Solving, Analysis, Judgment, Decision Making, Visual Memory, Discrimination, Observation, Relationship Concepts, Arithmetical Reasoning, Verbal & Figure Classification, Arithmetical Number Series, Non-Verbal Series etc.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">General Awareness:</strong> Questions on India and its neighboring countries especially pertaining to History, Culture, Geography, Economic Scene, General Policy & Scientific Research.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Quantitative Aptitude:</strong> Whole Numbers, Decimals, Fractions and relationship between Numbers, Percentage, Ratio & Proportion, Square roots, Averages, Interest, Profit & Loss, Discount, Partnership Business, Mixture and Allegation, Time & Distance, Time & Work, Basic algebraic identities, Geometry, Mensuration, Trigonometry, Statistical Charts.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-orange-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">English Comprehension:</strong> Spot the Error, Fill in the Blanks, Synonyms/Homonyms, Antonyms, Spellings/Detecting Mis-spelt words, Idioms & Phrases, One word substitution, Improvement of Sentences, Active/Passive Voice of Verbs, Conversion into Direct/Indirect narration, Shuffling of Sentence parts, Shuffling of Sentences in a passage, Cloze Passage, Comprehension Passage.
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="btn-ssc-primary">
+                    View Exam-Specific Syllabi
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📺</span> Best YouTube Playlists for SSC Study
+            </h2>
+            <p class="text-lg mb-8 leading-relaxed">Boost your SSC exam preparation with these highly recommended YouTube channels and their specialized playlists. They offer excellent content for all subjects and exam stages, from basic concepts to advanced problem-solving.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-red-50 p-6 rounded-xl border border-red-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-red-800 mb-3 flex items-center">
+                        <img src="unacademy.jpg" alt="Unacademy SSC Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-red-400">
+                        Unacademy SSC Exams
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">A leading platform offering a vast library of free live classes, recorded lectures, and practice sessions for all major SSC exams. Covers all subjects with expert educators.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PLd82f2WVUiQGGCBgh2fBdGuJ_cfL1MBtP&si=jvBtMQ7RJZw5kQL0" target="_blank" class="btn-ssc-primary self-start bg-red-600 hover:bg-red-700">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="bg-orange-50 p-6 rounded-xl border border-orange-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-orange-800 mb-3 flex items-center">
+                        <img src="sssc.jpg" alt="SSC Adda247 Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-orange-400">
+                        SSC Adda247
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">Offers daily current affairs, reasoning, quantitative aptitude, and English classes specifically tailored for SSC exams. Known for its comprehensive and updated content.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PLQYgCxDYkIszqKY_VUh7GhNCGTsVB6b9J&si=bggyVtvcOtQGTdSB" target="_blank" class="btn-ssc-primary self-start">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+               
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📄</span> Previous Year Papers & Mock Tests
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Regular practice with previous year papers and mock tests is indispensable for SSC exams. They help you familiarize yourself with the exam pattern, question types, and improve your speed and accuracy.</p>
+                <div class="flex flex-wrap gap-4 mt-4">
+                    <a href="https://www.careerpower.in/ssc-cgl-previous-year-question-paper.html" class="btn-ssc-primary">
+                        Download Tier-I PYQs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="https://www.careerpower.in/ssc-cgl-previous-year-question-paper.html" class="btn-ssc-primary bg-red-600 hover:bg-red-700">
+                        Download Tier-II PYQs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="https://testbook.com/ssc-cgl/test-series" class="btn-ssc-primary bg-amber-600 hover:bg-amber-700">
+                        Attempt Mock Tests
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📚</span> Recommended Books
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Equip yourself with these essential books, widely recommended for SSC exam preparation. A focused approach on core subjects is crucial for success.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🔢</span>
+                        <p class="text-lg font-medium">Quantitative Aptitude by R.S. Aggarwal</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🧠</span>
+                        <p class="text-lg font-medium">A Modern Approach to Verbal & Non-Verbal Reasoning by R.S. Aggarwal</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">📝</span>
+                        <p class="text-lg font-medium">Objective General English by S.P. Bakshi</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🌐</span>
+                        <p class="text-lg font-medium">Lucent's General Knowledge</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🧪</span>
+                        <p class="text-lg font-medium">General Science by Lucent's</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">📊</span>
+                        <p class="text-lg font-medium">SSC Previous Year Solved Papers</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <footer class="text-center text-gray-600 mt-12 text-sm">
+            <p>© 2025 Government Jobs Portal. All rights reserved.</p>
+            <p class="mt-2">Designed with dedication for SSC aspirants.</p>
+        </footer>
+    </div>
+</body>
+</html>

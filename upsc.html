@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Preparation Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a cleaner look and feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Lighter background for freshness */
+            color: #334155; /* Darker text for readability */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem; /* Increased padding */
+        }
+        .section-heading {
+            border-bottom: 2px solid #e2e8f0; /* Subtle border */
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem; /* More space */
+            color: #1e3a8a; /* Darker blue for headings */
+            font-weight: 700; /* Bold headings */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Enhanced shadow */
+            padding: 2rem; /* Increased padding inside cards */
+            margin-bottom: 2rem; /* More space between cards */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+        }
+        .youtube-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* Rounded corners for embeds */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #60a5fa); /* Blue gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Button styling */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6; /* Blue */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift */
+        }
+        .btn-primary svg {
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="container py-12">
+        <header class="text-center mb-16 bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-lg">
+            <h1 class="text-6xl font-extrabold mb-4 gradient-text">
+                Crack UPSC Civil Services Exam
+            </h1>
+            <p class="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Your ultimate guide to mastering the UPSC CSE, with curated resources, strategies, and top YouTube playlists.
+            </p>
+            <a href="#upsc-syllabus" class="btn-primary mt-8">
+                Explore Syllabus
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </header>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📚</span> About UPSC CSE
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">The Union Public Service Commission (UPSC) conducts the Civil Services Examination (CSE) annually to recruit candidates for prestigious Group 'A' and Group 'B' civil services of the Government of India, including the Indian Administrative Service (IAS), Indian Police Service (IPS), Indian Foreign Service (IFS), and many others. It's one of the most challenging yet rewarding exams in India.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">🎯</span> Exam Stages:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Preliminary Examination (Prelims):</strong> An objective-type, qualifying stage. It comprises two papers: General Studies Paper I and CSAT Paper II.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Main Examination (Mains):</strong> A written descriptive examination, crucial for merit. It consists of nine papers, including an essay, four general studies papers, two optional subject papers, and two qualifying language papers.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Personality Test (Interview):</strong> The final stage, assessing a candidate's mental aptitude, critical thinking, and suitability for a career in public service.
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✅</span> Eligibility Highlights:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Age:</strong> Generally 21 to 32 years, with specific relaxations for reserved categories (OBC, SC/ST, PwBD).
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Education:</strong> A Bachelor's degree from a recognized university or equivalent qualification.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">Attempts:</strong> Varies by category (e.g., 6 for General, 9 for OBC, unlimited for SC/ST).
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card" id="upsc-syllabus">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📝</span> UPSC CSE Syllabus
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">A thorough understanding of the detailed syllabus is the cornerstone of effective preparation. The syllabus is extensive, covering a wide array of subjects to test a candidate's comprehensive knowledge.</p>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✨</span> Prelims Syllabus Overview:
+                </h3>
+                <ul class="list-none space-y-2 ml-4 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">General Studies Paper I:</strong> Focuses on Current events of national & international importance, History of India & Indian National Movement, Indian & World Geography, Indian Polity & Governance (Constitution, Political System, Panchayati Raj, Public Policy, Rights Issues, etc.), Economic & Social Development (Sustainable Development, Poverty, Inclusion, Demographics, Social Sector Initiatives, etc.), Environmental Ecology, Bio-diversity & Climate Change, and General Science.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2 mt-1">●</span>
+                        <div>
+                            <strong class="font-semibold">CSAT Paper II:</strong> A qualifying paper testing Comprehension, Interpersonal skills including communication skills, Logical reasoning & analytical ability, Decision-making & problem-solving, General mental ability, and Basic numeracy (numbers and their relations, orders of magnitude, etc. - Class X level), Data interpretation (charts, graphs, tables, data sufficiency etc. - Class X level).
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="text-2xl font-semibold text-gray-700 flex items-center">
+                    <span class="mr-2">✍️</span> Mains Syllabus Overview:
+                </h3>
+                <p class="text-lg leading-relaxed">The Mains examination comprises nine papers. Four General Studies Papers (GS I, II, III, IV) cover topics ranging from Indian Heritage & Culture, History & Geography of the World & Society, Governance, Constitution, Polity, Social Justice & International Relations, Technology, Economic Development, Bio-diversity, Environment, Security & Disaster Management, to Ethics, Integrity & Aptitude. Additionally, there's an Essay paper, two optional subject papers (chosen by the candidate), and two qualifying language papers (one Indian language and English).</p>
+                <a href="https://vajiramandravi.com/upsc-syllabus/" class="btn-primary">
+                    View Complete Detailed Syllabus
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📺</span> Best YouTube Playlists for UPSC Study
+            </h2>
+            <p class="text-lg mb-8 leading-relaxed">Harness the power of visual learning with these highly recommended YouTube channels and their curated playlists. These resources are invaluable for conceptual clarity, current affairs updates, and strategic preparation.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-3 flex items-center">
+                        <img src="study.jpg" alt="Study IQ Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-blue-400">
+                        Study IQ Education
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">A powerhouse for daily current affairs analysis, editorial discussions, and comprehensive General Studies coverage. They offer numerous subject-wise playlists, making complex topics easy to grasp.</p>
+                    
+                    <a href="https://www.youtube.com/playlist?list..." target="_blank" class="btn-primary self-start">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-xl border border-green-200 shadow-md flex flex-col">
+                    <h3 class="text-2xl font-bold text-green-800 mb-3 flex items-center">
+                        <img src="drishti.jpg" alt="Drishti IAS Logo" class="w-10 h-10 rounded-full mr-3 border-2 border-green-400">
+                        Drishti IAS
+                    </h3>
+                    <p class="text-md text-gray-700 mb-4 flex-grow">Highly regarded for in-depth analysis and comprehensive lectures, especially popular among Hindi medium aspirants, though they also provide English content. Their extensive playlists cover history, polity, geography, and current affairs.</p>
+                    
+                    <a href="https://youtube.com/playlist?list=PLNdRsMqHda5-9SSPNFjQDySQyL_TzGtlN&si=huUDYUgdx4pkFdyx" target="_blank" class="btn-primary self-start bg-green-600 hover:bg-green-700">
+                        Visit Full Playlist
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </a>
+                </div>
+
+               
+
+                
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📄</span> Previous Year Papers & Strategy
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Consistent practice with previous year question papers (PYQs) is paramount. It helps you understand the exam's demand, identify recurring themes, and refine your time management skills. Analyze the trends to strategize effectively.</p>
+                <div class="flex flex-wrap gap-4 mt-4">
+                    <a href="https://compass.rauias.com/upsc-prelims/10-years-paper/" class="btn-primary">
+                        Download Prelims PYQs
+                        <svg xmlns="https://pwonlyias.com/prelims-previous-years-paper/" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="https://compass.rauias.com/upsc-mains/10-years-paper/" class="btn-primary bg-indigo-500 hover:bg-indigo-600">
+                        Download Mains PYQs
+                        <svg xmlns="https://compass.rauias.com/upsc-mains/10-years-paper/" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    </a>
+                    <a href="https://vajiramandravi.com/upsc-exam/how-to-prepare-for-upsc/" class="btn-primary bg-teal-500 hover:bg-teal-600">
+                        Explore Strategy Guides
+                        <svg xmlns="https://vajiramandravi.com/upsc-exam/how-to-prepare-for-upsc/" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="text-3xl font-bold section-heading">
+                <span class="mr-2">📚</span> Recommended Books
+            </h2>
+            <div class="space-y-5">
+                <p class="text-lg leading-relaxed">Building a strong foundation requires reliable study material. Here's a curated list of essential books that are widely recommended by toppers and experts for comprehensive UPSC preparation.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">📖</span>
+                        <p class="text-lg font-medium">Indian Polity by M. Laxmikanth</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">💰</span>
+                        <p class="text-lg font-medium">Indian Economy by Ramesh Singh</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">📜</span>
+                        <p class="text-lg font-medium">Modern Indian History by Spectrum</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🏛️</span>
+                        <p class="text-lg font-medium">Indian Art & Culture by Nitin Singhania</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🌍</span>
+                        <p class="text-lg font-medium">Geography NCERTs (Class 6-12)</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🌳</span>
+                        <p class="text-lg font-medium">Environment & Ecology by Shankar IAS</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg flex items-center shadow-sm">
+                        <span class="text-xl mr-3">🧠</span>
+                        <p class="text-lg font-medium">Ethics, Integrity & Aptitude (Lexicon)</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+       
+
+        <footer class="text-center text-gray-600 mt-12 text-sm">
+            <p>© 2025 Government Jobs Portal. All rights reserved.</p>
+            <p class="mt-2">Designed with passion for aspiring civil servants.</p>
+        </footer>
+    </div>
+</body>
+</html>

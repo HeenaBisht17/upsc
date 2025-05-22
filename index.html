@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Empower Women Careers</title>
+<style>
+  /* Reset & basics */
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  a:hover, button:hover {
+    color: #005499;
+    cursor: pointer;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #222;
+  }
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 0 3rem;
+  }
+  /* Hero */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(rgba(74, 98, 112, 0.7), rgba(159, 191, 209, 0.7)),
+      url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fdf6f0;
+    padding: 0 1rem;
+  }
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+    text-shadow: 2px 2px 6px #0b1d2f;
+  }
+  .hero p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin-bottom: 1.8rem;
+    text-shadow: 1px 1px 4px #0b1d2f;
+  }
+  .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 0.9rem 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0 6px 15px rgba(255, 111, 97, 0.55);
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color: #ff503c;
+    box-shadow: 0 8px 20px rgba(255, 80, 60, 0.7);
+  }
+
+  /* Quick Navigation Cards with distinct background colors and white text */
+  .quick-nav {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 1.6rem;
+  }
+  .nav-card {
+    border-radius: 15px;
+    padding: 1.6rem 1.2rem;
+    text-align: center;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+  }
+  .nav-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  }
+  .nav-card svg {
+    width: 56px;
+    height: 56px;
+    fill: white;
+    margin-bottom: 0.8rem;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+  }
+  .nav-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+  .nav-card p {
+    font-size: 0.95rem;
+  }
+
+  /* Distinct background colors for each career card */
+  .nav-card.upsc { background: #e94e77; }
+  .nav-card.banking { background: #4a90e2; }
+  .nav-card.ssc { background: #f5a623; }
+  .nav-card.others { background: #7ed6df; }
+  .nav-card.teaching { background: #9b59b6; }
+  .nav-card.railways { background: #27ae60; }
+  .nav-card.defence { background: #34495e; }
+
+  /* Benefits Section */
+  .benefits {
+    background: #ff6f61;
+    color: #fff;
+    padding: 3rem 1rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+  }
+  .benefits h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .benefits-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  .benefit-item {
+    flex: 1 1 240px;
+    text-align: center;
+  }
+  .benefit-item svg {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 0.8rem;
+    fill: white;
+  }
+  .benefit-item p {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  /* Success Stories Section */
+  .success-stories {
+    margin-top: 4rem;
+  }
+  .success-stories h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+  .story-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    padding: 1.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .story-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .story-card h4 {
+    margin-bottom: 0.4rem;
+    color: #ff6f61;
+    font-weight: 700;
+  }
+  .story-card blockquote {
+    font-style: italic;
+    color: #555;
+  }
+
+  /* Updates Section */
+  .updates {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    background: #f4f8fb;
+    border-left: 6px solid #ff6f61;
+    border-radius: 12px;
+  }
+  .updates h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #264653;
+  }
+  .update-list {
+    max-width: 600px;
+    margin: auto;
+  }
+  .update-item {
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  .update-date {
+    color: #999;
+    font-size: 0.85rem;
+    margin-left: 0.4rem;
+  }
+  /* Info text about manual updates */
+  .update-info {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 10px;
+  }
+
+  /* Interactive Quiz teaser section */
+  .quiz-teaser {
+    margin: 5rem 1rem 6rem;
+    text-align: center;
+  }
+  .quiz-teaser h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #264653;
+  }
+  .quiz-teaser p {
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+  }
+  .btn-secondary {
+    background-color: #264653;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 6px 15px rgba(38, 70, 83, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .btn-secondary:hover {
+    background-color: #1b3840;
+    box-shadow: 0 8px 24px rgba(27, 56, 64, 0.8);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 1.8rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  footer a {
+    color: #ff6f61;
+    margin: 0 0.3rem;
+  }
+  footer a:hover {
+    color: #ffa290;
+  }
+
+  /* Modal backdrop & window */
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-backdrop.active {
+    display: flex;
+  }
+  .modal-window {
+    background: white;
+    border-radius: 16px;
+    max-width: 500px;
+    width: 90%;
+    padding: 2.2rem 2rem;
+    box-shadow: 0 7px 24px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Quiz styles */
+  .quiz-question {
+    margin-bottom: 1.4rem;
+  }
+  .quiz-options label {
+    display: block;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+  }
+  .quiz-options input {
+    margin-right: 10px;
+  }
+  .quiz-submit {
+    background-color: #ff6f61;
+    border: none;
+    padding: 0.75rem 1.8rem;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  .quiz-submit:hover {
+    background-color: #e65a4c;
+  }
+  .quiz-result {
+    font-weight: 700;
+    color: #264653;
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+    .btn-primary {
+      font-size: 1rem;
+      padding: 0.7rem 1.8rem;
+    }
+    .benefits-list {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <h1>Empowering Women to Achieve Their Dream Careers</h1>
+  <p>Explore detailed guidance, resources, and success stories across UPSC, Banking, SSC &amp; more.</p>
+  <button class="btn-primary" id="scrollToCareersBtn" aria-label="Explore Careers">Explore Careers</button>
+</section>
+
+<div class="container">
+
+  <!-- Quick Navigation Cards -->
+  <section aria-labelledby="quick-nav-heading" id="career-cards">
+    <h2 id="quick-nav-heading" style="margin-bottom:1rem; text-align:center; font-size:2rem; color:#264653;">Career Paths</h2>
+    <div class="quick-nav" role="list">
+      <a href="upsc.html">
+      <div class="nav-card upsc" role="listitem" tabindex="0" data-section="upsc" aria-label="UPSC Career Section">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" stroke="white" stroke-width="4" fill="none"/><path d="M32 12v40M12 32h40" stroke="white" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>UPSC</h3>
+        <p>Shape the nation’s future with administrative services.</p>
+      </div>
+      </a>
+      <a href="bank.html">
+      <div class="nav-card banking" role="listitem" tabindex="0" data-section="banking" aria-label="Banking Career Section">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="22" width="36" height="20" stroke="white" stroke-width="4" fill="none" rx="5" ry="5"/><path d="M32 42v10" stroke="white" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>Banking</h3>
+        <p>Secure your financial career in banks and institutions.</p>
+      </div>
+      </a>
+      <a href="ssc.html">
+      <div class="nav-card ssc" role="listitem" tabindex="0" data-section="ssc" aria-label="SSC Career Section">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="18" width="36" height="28" stroke="white" stroke-width="4" fill="none" rx="7" ry="7"/><path d="M32 46v6" stroke="white" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>SSC</h3>
+        <p>Grab diverse government job opportunities across departments.</p>
+      </div>
+      </a>
+      <a href="teaching.html">
+      <div class="nav-card teaching" role="listitem" tabindex="0" data-section="teaching" aria-label="Teaching and Research Career Section">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" stroke="white" stroke-width="4" fill="none"/><path d="M20 44h24v2H20zM20 38h24v2H20zM20 32h16v2H20z" stroke="white" stroke-width="4" stroke-linecap="round"/></svg>
+        <h3>Teaching</h3>
+        <p>Inspire minds and contribute to knowledge.</p>
+      </div>
+      </a>
+      <a href="railway.html">
+      <div class="nav-card railways" role="listitem" tabindex="0" data-section="railways" aria-label="Railways Career Section">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="28" width="36" height="16" stroke="white" stroke-width="4" fill="none" rx="4" ry="4"/><circle cx="23" cy="48" r="4" fill="white"/><circle cx="41" cy="48" r="4" fill="white"/></svg>
+        <h3>Railways</h3>
+        <p>Join the engine that powers the nation forward.</p>
+      </div>
+</a>
+
+
+      
+      
+    </div>
+  </section>
+
+ 
+
+  <!-- Featured Success Stories -->
+  <section class="success-stories" aria-labelledby="success-heading">
+    <h2 id="success-heading">Inspiring Success Stories</h2>
+    <div class="stories-grid">
+      <article class="story-card" tabindex="0" aria-label="Story of Ananya Sharma, UPSC Topper">
+        <img src="Tina.jpg" alt="Photo of Ananya Sharma" />
+        <h4>Ananya Sharma</h4>
+        <blockquote>“I believed in myself and faced every challenge head-on. You can too!”</blockquote>
+        <small>UPSC Topper 2023</small>
+      </article>
+      <article class="story-card" tabindex="0" aria-label="Story of Priya Singh, Banking Specialist">
+        <img src="garima.jpg" alt="Photo of Priya Singh" />
+        <h4>Priya Singh</h4>
+        <blockquote>“Consistent preparation opens doors. To every woman daring to dream, never stop.”</blockquote>
+        <small>Bank PO 2022</small>
+      </article>
+    </div>
+  </section>
+
+  <!-- Latest News/Updates -->
+  <section class="updates" aria-labelledby="updates-heading">
+    <h2 id="updates-heading">Latest Exam Updates</h2>
+    <div class="update-list" role="list" id="updatesList">
+      <p class="update-item" role="listitem">UPSC Civil Services Exam 2025 scheduled for<time class="update-date" datetime="2024-06-15">May 25, 2025</time></p>
+      <p class="update-item" role="listitem">SSC CGL 2025
+
+Notification Release Date <time class="update-date" datetime="2024-06-20">June 9, 2025</time></p>
+      <p class="update-item" role="listitem">SBI CBO
+
+Registration date <time class="update-date" datetime="2024-06-10"> 9 – 29 May 2025</time></p>
+    </div>
+    <p class="update-info"><a href="https://www.freejobalert.com/latest-notifications/" target="_blank" rel="noopener" class="fancy-link">See More Jobs &rarr;</a></p>
+  </section>
+
+  <!-- Interactive Quiz Teaser -->
+  <section class="quiz-teaser" aria-labelledby="quiz-heading">
+    <h2 id="quiz-heading">Find Your Ideal Career Path</h2>
+    <p>Take our quick interactive quiz to discover which career best suits your interests and strengths!</p>
+    <button class="btn-secondary" id="openQuizBtn" aria-haspopup="dialog">Take the Quiz</button>
+  </section>
+
+</div>
+
+<!-- Modal for Quiz -->
+<div id="quizModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+  <div class="modal-window" role="document">
+    <button class="modal-close" id="closeQuizBtn" aria-label="Close Quiz">&times;</button>
+    <h2 id="modalTitle" style="color:#264653; margin-bottom:1rem;">Career Matching Quiz</h2>
+    <form id="quizForm" aria-describedby="modalDesc">
+      <p id="modalDesc" style="margin-bottom:1.5rem; color:#555;">Select the option that resonates with you the most for each question.</p>
+      <div class="quiz-question" role="group" aria-labelledby="q1-label">
+        <h3 id="q1-label">1. What motivates you the most?</h3>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" value="upsc" required /> Serving the nation and policy making</label>
+          <label><input type="radio" name="q1" value="banking" /> Financial stability and economic sector</label>
+          <label><input type="radio" name="q1" value="ssc" /> Diverse government job opportunities</label>
+          <label><input type="radio" name="q1" value="teaching" /> Educating and research contributions</label>
+          <label><input type="radio" name="q1" value="railways" /> Infrastructure growth and operations</label>
+          <label><input type="radio" name="q1" value="defence" /> Protecting the nation and law enforcement</label>
+        </div>
+      </div>
+      <div class="quiz-question" role="group" aria-labelledby="q2-label">
+        <h3 id="q2-label">2. Which environment do you prefer?</h3>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2" value="upsc" required /> Dynamic policy and administration</label>
+          <label><input type="radio" name="q2" value="banking" /> Structured and finance-based</label>
+          <label><input type="radio" name="q2" value="ssc" /> Variety of departments and roles</label>
+          <label><input type="radio" name="q2" value="teaching" /> Academic and research oriented</label>
+          <label><input type="radio" name="q2" value="railways" /> Practical operational setting</label>
+          <label><input type="radio" name="q2" value="defence" /> Discipline and service to country</label>
+        </div>
+      </div>
+      <div class="quiz-question" role="group" aria-labelledby="q3-label">
+        <h3 id="q3-label">3. Your preferred study style?</h3>
+        <div class="quiz-options">
+          <label><input type="radio" name="q3" value="upsc" required /> Broad syllabus with current affairs focus</label>
+          <label><input type="radio" name="q3" value="banking" /> Quantitative & reasoning heavy</label>
+          <label><input type="radio" name="q3" value="ssc" /> General awareness & aptitude variety</label>
+          <label><input type="radio" name="q3" value="teaching" /> Subject specialization and research</label>
+          <label><input type="radio" name="q3" value="railways" /> Technical and operational focus</label>
+          <label><input type="radio" name="q3" value="defence" /> Physical & mental aptitude</label>
+        </div>
+      </div>
+      <button type="submit" class="quiz-submit" aria-label="Submit Quiz">Submit</button>
+    </form>
+    <p class="quiz-result" id="quizResult" role="alert" aria-live="polite" aria-atomic="true" style="display:none;"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2024 EmpowerWomenCareers | 
+    <a href="mailto:contact@empowercareers.com" aria-label="Send email to contact empower careers">contact@empowercareers.com</a> | 
+    <a href="#" aria-label="Visit our Facebook page">Facebook</a> | 
+    <a href="#" aria-label="Visit our Twitter page">Twitter</a> | 
+    <a href="#" aria-label="Visit our Instagram page">Instagram</a>
+  </p>
+</footer>
+
+<script>
+  // Smooth scroll to career cards on CTA button click
+  const scrollToBtn = document.getElementById('scrollToCareersBtn');
+  scrollToBtn.addEventListener('click', () => {
+    document.getElementById('career-cards').scrollIntoView({behavior: 'smooth'});
+  });
+
+  // Modal open/close logic
+  const openQuizBtn = document.getElementById('openQuizBtn');
+  const closeQuizBtn = document.getElementById('closeQuizBtn');
+  const quizModal = document.getElementById('quizModal');
+  const quizForm = document.getElementById('quizForm');
+  const quizResult = document.getElementById('quizResult');
+
+  openQuizBtn.addEventListener('click', () => {
+    quizModal.classList.add('active');
+    quizResult.style.display = 'none';
+    quizForm.style.display = 'block';
+    quizForm.reset();
+    // Focus first question for accessibility
+    quizForm.querySelector('input').focus();
+  });
+  closeQuizBtn.addEventListener('click', closeModal);
+  quizModal.addEventListener('click', (e) => {
+    if (e.target === quizModal) closeModal();
+  });
+  function closeModal() {
+    quizModal.classList.remove('active');
+    openQuizBtn.focus();
+  }
+
+  // Quiz submit logic and career suggestion
+  quizForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(quizForm);
+    const answers = {upsc: 0, banking: 0, ssc: 0, teaching: 0, railways: 0, defence: 0};
+
+    for (const [key, value] of data.entries()) {
+      if (answers.hasOwnProperty(value)) {
+        answers[value]++;
+      }
+    }
+    // Find max count career(s)
+    let maxScore = -1;
+    let suggestedCareers = [];
+    for (const career in answers) {
+      if (answers[career] > maxScore) {
+        maxScore = answers[career];
+        suggestedCareers = [career];
+      } else if (answers[career] === maxScore) {
+        suggestedCareers.push(career);
+      }
+    }
+
+    quizForm.style.display = 'none';
+    quizResult.style.display = 'block';
+    const displayCareers = suggestedCareers.map(c => c.charAt(0).toUpperCase() + c.slice(1)).join(' & ');
+    quizResult.textContent = `Based on your answers, the ideal career path${suggestedCareers.length>1 ? 's' : ''} for you could be: ${displayCareers}`;
+    quizResult.focus();
+  });
+
+  // Keyboard navigation for nav cards accessibility
+  const navCards = document.querySelectorAll('.nav-card');
+  navCards.forEach(card => {
+    card.addEventListener('keypress', e => {
+      if(e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        alert(`Navigate to ${card.dataset.section.toUpperCase()} career section (not implemented)`);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
